@@ -11,7 +11,7 @@ You should have received a copy of the GNU General Public License along with SIE
 import ast, hashlib, os, time, requests
 from checksumdir import dirhash
 
-url = "http://127.0.0.1:5000/"#"https://siemple.pythonanywhere.com/"
+url = "http://127.0.0.1:5000/"
 
 def createacc():
     a = input("Enter the password you want to use: ")
