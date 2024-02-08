@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <title>Directories</title>
+    <body>
+        <a href="{{ url_for('index') }}">Home</a>
+        <br>
+        <h1>Your monitored directories</h1>
+        <p>Click the link to stop monitoring it</p>
+        <br>
+        {% for i in data %}
+        <a href="{{ url_for('dell', dirr=i, user=user, pas=pas) }}">{{ i }}</a>
+        {% endfor %}
+    </body>
+</html>

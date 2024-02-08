@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+    <title>Display</title>
+    <body>
+        <a href="{{ url_for('index') }}">Home</a>
+        <br>
+        <h1>Only displays last 100 messages<br>Download full text file <a href="{{ url_for('download') }}">Here</a></h1>
+        {% for i in data %}
+        <p>{{ i }}</p>
+        {% endfor %}
+    </body>
+</html>

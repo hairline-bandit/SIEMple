@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <title>System Display</title>
+    <body>
+        <a href="{{ url_for('index') }}">Home</a>
+        <br>
+        {% for i in data %}
+        {% if i[0] == "*" %}
+        <h2>{{ i }}</h2>
+        {% else %}
+        <p>{{ i }}</p>
+        {% endif %}
+        {% endfor %}
+    </body>
+</html>
